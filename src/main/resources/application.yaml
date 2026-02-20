@@ -13,7 +13,7 @@ spring:
 # AWS Config
 aws:
   s3:
-    bucket: your-bucket-name
+    bucket: addys3bucketpractice
   region: us-east-1
   access-key: ${AWS_ACCESS_KEY_ID}
   secret-key: ${AWS_SECRET_ACCESS_KEY}
