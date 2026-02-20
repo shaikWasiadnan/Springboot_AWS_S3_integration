@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: SpringBoot_S3
+    # MySQL Local Config (
+  datasource:
+    url: jdbc:mysql://localhost:3306/imageDB
+    username: root
+    password: dummy_password_123
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# AWS Config
+aws:
+  s3:
+    bucket: your-bucket-name
+  region: us-east-1
+  access-key: ${AWS_ACCESS_KEY_ID}
+  secret-key: ${AWS_SECRET_ACCESS_KEY}
